@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Test DOM</title>
-	<link rel="stylesheet" href="style.css">
-	<link id="demo_style" rel="stylesheet" href="demo_text1.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link id="changeColor-text" demo_style="color" rel="stylesheet" href="css/style-1.css">
 </head>
 <body>
 	<div class="container">
@@ -13,9 +13,10 @@
 			<p class="demo_text">With the HTML DOM, JavaScript can access and change all the elements of an HTML document.</p>
 		</div>
 		<h2>ChangeColor and boder of p</h2>
-		<a class="myButton btn-red" onclick = "changeColor('demo_text1.css')" >Change Color Red</a>
-		<a class="myButton btn-blue" onclick= "changeColor('demo_text2.css')" >Change Color Blue</a>
+		<a class="myButton change-red" onclick ="changeStyleColor('css/style-1.css')" >Change Color Red</a>
+		<a class="myButton change-blue" onclick ="changeStyleColor('css/style-2.css')" >Change Color Blue</a>
 	</div>
 </body>
-<script href="main.js"></script>
+<script src="main.js"></script>
+
 </html>

@@ -1,8 +1,7 @@
-var demoText = document.querySelector("#demo_style");
-console.log(demoText);
+var changeColorID = document.getElementById("changeColor-text");
 
 //Change Color of Demo text p
-function changeColor(url_style) {
-	var a = demoText.setAttribute("href", url_style);
+function changeStyleColor(url) {
+	var a = changeColorID.setAttribute ("href", url);
 	console.log(a);
 }
