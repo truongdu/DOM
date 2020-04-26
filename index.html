@@ -7,7 +7,7 @@
 	<link id="changeColor-text" demo_style="color" rel="stylesheet" href="css/style-1.css">
 </head>
 <body>
-	<div class="container abc3">
+	<div class="container">
 		<h1>DEMO DOM JS</h1>
 		<div class="demo">
 			<p class="demo_text">With the HTML DOM, JavaScript can access and change all the elements of an HTML document.</p>
@@ -16,8 +16,10 @@
 		<a class="myButton change-red" onclick ="changeStyleColor('css/style-1.css')" >Change Color Red</a>
 		<a class="myButton change-blue" onclick ="changeStyleColor('css/style-2.css')" >Change Color Blue</a>
 		<h2>Change container full Width</h2>
-		<a class="myButton" onclick="addClass(changeContainerClass,'container')">Change container</a>
+		<a class="myButton" onclick="addClass(changeContainerClass,'')">Change container</a>
 		<a class="myButton" onclick="addClass(changeContainerClass,'container-fluid')">Change container-fluid</a>
+		<h2>Remove Class Container</h2>
+		<a class="myButton" onclick="removeClass(changeContainerClass,'container-fluid')">Remove container</a>
 	</div>
 </body>
 <script src="main.js"></script>

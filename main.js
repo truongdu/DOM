@@ -56,6 +56,7 @@ function removeClass(el, className){
 			stringToArrClass.splice(checkClass,1);
 			var arrToStringClass = stringToArrClass.join(" ");
 			console.log(arrToStringClass);
+			el.setAttribute("class", arrToStringClass);
 		}
 	}else{
 		console.log("Class khong ton tai");
