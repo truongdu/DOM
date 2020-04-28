@@ -64,4 +64,32 @@ function removeClass(el, className){
 }
 // addClass(changeContainerClass,'abc');
 // addClass(h1,'conga');
-removeClass(changeContainerClass,'abc2');
+// removeClass(changeContainerClass,'abc2');
+
+
+var dropDownList = document.querySelector(".dropdown");
+
+function openDropDown(key){
+	var a = dropDownList.getAttribute("class");
+	var stringToArray = a.split(" ");
+	if(stringToArray.indexOf(key) == -1){
+		dropDownList.classList.add(key);
+	} else {
+		dropDownList.classList.remove(key);
+	}
+}
+
+var listSelectYear = Array.from( document.querySelectorAll("select[name='form-year__select']") );
+console.log(listSelectYear);
+
+for(var i=0; i<listSelectYear.length; i++ ){
+	var select = listSelectYear[i];
+	// console.log(select);
+	for(var j=1995; j<=2021; j++ ){
+		var createOption = document.createElement("option");
+			createOption.setAttribute("value", j);
+			createOption.innerHTML = "Năm: " + j;
+		select.append(createOption);
+		console.log(createOption);
+	}
+}

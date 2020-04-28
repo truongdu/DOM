@@ -7,7 +7,7 @@
 	<link id="changeColor-text" demo_style="color" rel="stylesheet" href="css/style-1.css">
 </head>
 <body>
-	<div class="container">
+	<div class="container abc 123">
 		<h1>DEMO DOM JS</h1>
 		<div class="demo">
 			<p class="demo_text">With the HTML DOM, JavaScript can access and change all the elements of an HTML document.</p>
@@ -20,6 +20,33 @@
 		<a class="myButton" onclick="addClass(changeContainerClass,'container-fluid')">Change container-fluid</a>
 		<h2>Remove Class Container</h2>
 		<a class="myButton" onclick="removeClass(changeContainerClass,'container-fluid')">Remove container</a>
+
+		<div class="dropdown">
+			<button class="btn" onclick="openDropDown('open');">Dropdown</button>
+			<ul class="dropdown__menu">
+				<li><a href="#">Drop down 1</a></li>
+				<li><a href="#">Drop down 2</a></li>
+				<li><a href="#">Drop down 3</a></li>
+				<li><a href="#">Drop down 4</a></li>
+				<li><a href="#">Drop down 5</a></li>
+			</ul>
+		</div>
+		<div class="form-test">
+			<form action="" class="form-year">
+				<label for="">Bắt đầu</label>
+				<select name="form-year__select" id="">
+					<!-- <option value="">11111</option> -->
+				</select>
+			</form>
+
+			<form action="" class="form-year-2">
+				<label for="">Kết thúc</label>
+				<select name="form-year__select" id="">
+					<!-- <option value="">2222</option> -->
+				</select>
+			</form>
+		</div>
+		
 	</div>
 </body>
 <script src="main.js"></script>
